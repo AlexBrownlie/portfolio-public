@@ -21,11 +21,10 @@ class Work extends Component {
                     {this.props.projectDescription}
                 </CardText>
                 <CardActions border style={{textAlign:'center'}}>
-                    <Button href={this.props.githubLink} colored>GitHub</Button>
-                    <Button colored>Live Demo</Button>
+                    <Button href={this.props.githubLink} target="_blank" colored>GitHub</Button>
                 </CardActions>
                 <CardMenu style={{color: '#fff'}}>
-                    <IconButton name="share"/>
+                    {/* <IconButton name="share" href={this.props.githubLink}/> */}
                 </CardMenu>
             </Card>
         )

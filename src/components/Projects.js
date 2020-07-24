@@ -53,24 +53,10 @@ class Projects extends Component {
                     <Work
                     language="Python"
                     projectNum="1"
-                    projectDescription="This is a link to one of my Python projects... this is the description."
-                    backgroundImg='url(https://www.dataoptimal.com/wp-content/uploads/python-programming-for-beginners-2019-1024x574.jpg) center / cover'
-                    />
-                    
-                    {/* Project 2 */}
-                    <Work
-                    language="Python"
-                    projectNum="2"
-                    projectDescription="This is a link to one of my Python projects... this is the description."
-                    backgroundImg='url(https://www.dataoptimal.com/wp-content/uploads/python-programming-for-beginners-2019-1024x574.jpg) center / cover'
-                    />
-
-                    {/* Project 3 */}
-                    <Work
-                    language="Python"
-                    projectNum="3"
-                    projectDescription="This is a link to one of my Python projects... this is the description."
-                    backgroundImg='url(https://www.dataoptimal.com/wp-content/uploads/python-programming-for-beginners-2019-1024x574.jpg) center / cover'
+                    title="Data Scraping"
+                    githubLink="https://github.com/AlexBrownlie/Box-Theory_Script"
+                    projectDescription="This was a project that I started but due to other commitments could not finish. The end goal was for it to automate Darvas' Box Theory and see how accurate it was based on historical data."
+                    backgroundImg='url(https://specials-images.forbesimg.com/imageserve/5f1a813c4e927a7f60669886/960x0.jpg?fit=scale) center / cover'
                     />
                 </div>
             )
@@ -83,86 +69,29 @@ class Projects extends Component {
                     <Work
                     language="HTML/CSS"
                     projectNum="1"
-                    projectDescription="This is a link to one of my HTML/CSS projects... this is the description."
-                    backgroundImg='url(https://miro.medium.com/max/675/1*dqLV7KjUtg57JPBCilqxSQ.jpeg) center / cover'
-                    />
-                    
-                    {/* Project 2 */}
-                    <Work
-                    language="HTML/CSS"
-                    projectNum="2"
-                    projectDescription="This is a link to one of my HTML/CSS projects... this is the description."
-                    backgroundImg='url(https://miro.medium.com/max/675/1*dqLV7KjUtg57JPBCilqxSQ.jpeg) center / cover'
-                    />
-
-                    {/* Project 3 */}
-                    <Work
-                    language="HTML/CSS"
-                    projectNum="3"
-                    projectDescription="This is a link to one of my HTML/CSS projects... this is the description."
-                    backgroundImg='url(https://miro.medium.com/max/675/1*dqLV7KjUtg57JPBCilqxSQ.jpeg) center / cover'
-                    />
-                </div>
-            )
-        } 
-        /* JavaScript Tab */
-        else if(this.state.activeTab === 3 ) {
-            return(
-                <div className="projects-grid">
-                    {/* Project 1 */}
-                    <Work
-                    language="JavaScript"
-                    projectNum="1"
-                    projectDescription="This is a link to one of my JavaScript projects... this is the description."
-                    backgroundImg='url(https://www.tutorialrepublic.com/lib/images/javascript-illustration.png) center / cover'
-                    />
-                    
-                    {/* Project 2 */}
-                    <Work
-                    language="JavaScript"
-                    projectNum="2"
-                    projectDescription="This is a link to one of my JavaScript projects... this is the description."
-                    backgroundImg='url(https://www.tutorialrepublic.com/lib/images/javascript-illustration.png) center / cover'
-                    />
-
-                    {/* Project 3 */}
-                    <Work
-                    language="JavaScript"
-                    projectNum="3"
-                    projectDescription="This is a link to one of my JavaScript projects... this is the description."
-                    backgroundImg='url(https://www.tutorialrepublic.com/lib/images/javascript-illustration.png) center / cover'
+                    title="Portfolio Website"
+                    githubLink="https://github.com/AlexBrownlie/portfolio-public"
+                    projectDescription="This website was created utilising HTML and CSS. Although it was mainly developed using JSX, CSS was used for styling."
+                    backgroundImg='url(https://divbyte.com/wp-content/uploads/2019/02/html-css.png) center / cover'
                     />
                 </div>
             )
         } 
         /* ReactJS Tab */
-        else if(this.state.activeTab === 4 ) {
+        else if(this.state.activeTab === 3 ) {
             return(
-                <div className="projects-grid">
+                <div className="projects-grid" style={{float: 'center'}}>
                     {/* Project 1 */}
                     <Work
                     language="ReactJS"
                     projectNum="1"
-                    projectDescription="This is a link to one of my ReactJS projects... this is the description."
-                    backgroundImg='url(https://curatti.com/wp-content/uploads/2017/11/ReactJS-1000x500.jpg) center / cover'
+                    title="Portfolio Website"
+                    githubLink="https://github.com/AlexBrownlie/portfolio-public"
+                    projectDescription="This website was mainly developed using ReactJS and NodeJS, the source code is freely available from the GitHub repo."
+                    backgroundImg='url(https://reactjs.org/logo-og.png) center / cover'
                     />
-                    
-                    {/* Project 2 */}
-                    <Work
-                    language="ReactJS"
-                    projectNum="2"
-                    projectDescription="This is a link to one of my ReactJS projects... this is the description."
-                    backgroundImg='url(https://curatti.com/wp-content/uploads/2017/11/ReactJS-1000x500.jpg) center / cover'
-                    />
-
-                    {/* Project 3 */}
-                    <Work
-                    language="ReactJS"
-                    projectNum="3"
-                    projectDescription="This is a link to one of my ReactJS projects... this is the description."
-                    backgroundImg='url(https://curatti.com/wp-content/uploads/2017/11/ReactJS-1000x500.jpg) center / cover'
-                    />
-                </div>            )
+                </div>            
+                )
         }
     }
 
